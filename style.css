@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mynerve', cursive;
+}
+.container{
+    max-width: 80%;
+    padding: 34px;
+    margin: auto;
+    font-size: x-large;
+}
+.container h1, p{
+    text-align: center;
+}
+p{
+    font-size: 17px;
+}
+input,textarea{
+    display: block;
+    background: #93e4ee;
+    border: 2px solid #8a42cc;
+    border-radius: 7px;
+    outline: none;
+    font-size: 17px;
+    width: 80%;
+    margin: 13px 0px;
+    padding: 10px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    background: white;
+    padding: 8px 12px;
+    border: 2px solid #8a42cc;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+.SubmitMsg{
+    font-size: inherit;
+    color: #127e7e;
+}

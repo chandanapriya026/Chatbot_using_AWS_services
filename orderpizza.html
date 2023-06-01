@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+}
+
+/* Form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  margin: 20px 0;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="time"] {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="button"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Table styles */
+table {
+  width: 85%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+  vertical-align: top;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+        </style>
+    </head>
+        
+
+
+<body>
+    <img class="bg" src="pizza.jpg" alt="Assignment2">
+    <div class="container">
+        <table>
+        <h3>Welcome to Pizza's World</h3>
+		<tr>
+			<td>
+				<h2>Pizza Order Form</h2>
+				<form>
+					<p><label>Customer name: <input id="a" required type="text"></label></p>
+					<p><label>Telephone: <input type="number" id="b"></label></p>
+					<p><label>E-mail address: <input type="email" id="c"></label></p>
+					<fieldset>
+						<legend>
+							<h2> Pizza Size</h2>
+						</legend>
+						<p><label> <input type="radio" name=size id="d" value="small"> Small </label></p>
+						<p><label> <input type="radio" name=size id="e" value="medium"> Medium </label></p>
+						<p><label> <input type="radio" name=size id="f" value="large"> Large </label></p>
+					</fieldset>
+					<fieldset>
+						<legend>
+							<h2>Pizza Toppings</h2>
+						</legend>
+						<p><label> <input type="checkbox" name="a" id="g" value="Bacon"> Pepper </label></p>
+						<p><label> <input type="checkbox" name="c" id="i" value="Onion"> Olives </label></p>
+						<p><label> <input type="checkbox" name="d" id="j" value="Mushroom"> Mushroom </label></p>
+					</fieldset>
+					<p><label>Delivery instructions: <textarea maxlength=10></textarea></label></p>
+					<p><label>No. Of Pieces: <input type="number" id="k" /></p>
+					<p id="or"><input type="button" value="Process order" onClick="check();addBtn();" />
+						<input type="Reset" id="cl" value="Clear"></p>
+			</td>
+			<td></td>
+			<td></td>
+				<h1><u>
+						<p id="z"></p>
+					</u></h1>
+				<h2>
+					<p id="w"></p>
+				</h2>
+				<pre><h4><p id="p1"></p></h4></pre>
+				<pre><h4><p id="p2"></p></h4></pre>
+				<pre><h4><p id="p3"></p></h4></pre>
+				<pre><h4><p id="p4"></p></h4></pre>
+				<pre><h4><p id="p5"></p></h4></pre>
+				<pre><h4><p id="p6"></p></h4></pre>
+				<pre><h4><p id="x"></p></h4></pre>
+				<pre><a href="pz1.html"><div id="bt"></div></a></pre>
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"34a6d7410350c8ed113dd21b02a3e7544","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+</body>
+
+</html>
